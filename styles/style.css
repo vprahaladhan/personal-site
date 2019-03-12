@@ -1,5 +1,6 @@
 body {
     background: white;
+    font-family: Arial;
 }
 
 h1 {
@@ -102,5 +103,5 @@ img:hover {
 
 #select {
     width: 81%;
-    height: 25px;
+    height: 30px;
 }
