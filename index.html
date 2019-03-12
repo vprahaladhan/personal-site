@@ -5,16 +5,87 @@
     <link href="./styles/style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>My Page on the Web</h1>
-    <h6>I am learning HTML tags</h6>
-    <span>This is my 1st span element</span><br>
-    <span>This is my 2nd span element</span>
-    <p>I'm hosted with GitHub Pages.</p>
-    <div>
-        <p>This is a <span>div</span> and it is a nested element</p>
+    <div id="logo">
+        <a href="http://10000coders.com/">
+            <img src="./images/10000-coders-logo_4.png" alt="10000-coders-logo">
+        </a>
     </div>
-    <a href="http://10000coders.com/">
-        <img src="./images/10000-coders-logo_1.png" alt="10000-coders-logo">
-    </a>
+    <h1>Welcome to 10000 Coders Programming Challenge</h1>
+
+    <div id="top-level">
+        <div id="intro">
+            <p>Hello guys,</p>
+            <p>Welcome to the HTML/CSS programming exercise by 10000 coders. This will test your basics in HTML and CSS. You need to recreate the document you are reading now using HTML/CSS. <u>Make sure that the page looks exactly like this document.</u></p>
+
+        </div>
+        
+        <div id="instructions">
+            <h3>General Instructions</h3>
+            <ul>
+                <li>There will be a 15px margin between all elements in the form shown below</li>
+                <li>Use external CSS for styling</li>
+                <li>This exercise will cover the following constructs of HTML</li>
+                <ul>
+                    <li>HTML Form</li>
+                    <li>Text input with placeholders</li>
+                    <li>Text area</li>
+                    <li>Password input</li>
+                    <li>Select drop-down box</li>
+                    <li>Radio buttons</li>
+                    <li>Checkboxes and</li>
+                    <li>Buttons</li>
+                </ul>
+            </ul>        
+        </div>
+        <div id="all-the-best">
+            <p><b>So, let's get started. All the best!</b></p>
+        </div>
+        <div id="form-wrapper">
+            <form id="form">
+                <p>
+                    <span class="form-label">Full Name</span>
+                    <span class="form-text-input"><input type="text" name="fullName" value="Enter your full name" size="50"></span>
+                </p>
+                <p>
+                    <span class="form-label">Secret Pin</span>
+                    <span class="form-text-input"><input type="text" name="secretPin" value="Enter your secret pin" size="50"></span>        
+                </p>
+                <p>
+                    <span class="form-label">Gender</span>
+                    <span class="form-text-input">
+                        <input type="radio" name="gender" value="male" /> Male
+                        <input type="radio" name="gender" value="female" /> Female
+                    </span>
+                </p>
+                <p>
+                    <span class="form-label">I am an expert in</span>
+                    <span class="form-text-input">
+                        <input type="checkbox" name="html" value="HTML" /> HTML
+                        <input type="checkbox" name="css" value="CSS" /> CSS                
+                    </span>
+                </p>
+                <p>
+                    <span class="form-label">My field of study is</span>
+                    <span class="form-text-input">
+                        <select>
+                            <option value="" disabled selected>Select your branch using this select drop-down</option>
+                            <option value="csc">Computer Science</option>
+                            <option value="ele">Electricl</option>
+                            <option value="eee">Electrical &amp; Electronics</option>
+                            <option value="civ">Civil</option>
+                        </select>
+                    </span>
+                </p>
+                <p>
+                    <span class="form-label label">Tell more about yourself</span>
+                    <span class="form-text-input">
+                        <textarea rows="4" cols="50">This is text area. Enter your description.
+                        </textarea>
+                    </span>
+                </p>
+                <input class="submit" type="submit" value="Submit Form">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
