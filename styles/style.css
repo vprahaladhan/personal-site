@@ -55,7 +55,8 @@ img:hover {
 }
 
 .input {
-    border: 1px solid Green;    
+    border: 1px solid darkgreen;
+    width: 400px;
 }
 
 .submit {
@@ -79,4 +80,8 @@ img:hover {
 
 #all-the-best {
     text-align: center;
+}
+
+#select {
+    width: 350px;
 }
