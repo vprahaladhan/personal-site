@@ -4,9 +4,71 @@ body {
 
 h1 {
     text-align: center;
+    color: blue;
+}
+
+h3 {
+    color: blue;
+}
+
+h6 {
+    width: 125px;
+}
+
+h6:hover{    
+    background: white;
+    color: black;
+}
+
+p {
+    font-size: 16px;
+}
+
+li {
+    font-size: 16px;
+}
+
+img {
+    width: 230px;
+    height: 100px;
 }
 
 img:hover {
-    border: solid 2px red;
+    border: solid 2px blue;
     transform: scale(1.1);
+}
+
+.label{display:block; float:left;}
+
+.form-label {
+    font-weight: bold;
+    width: 200px;
+    margin: 15px;
+}
+
+.form-text-input {
+    margin: 15px;
+}
+
+.submit {
+    margin: 15px;
+    background: blue;
+    color: white;
+    border: 0;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+#top-level {
+    width: 60%;
+    margin: auto;
+}
+
+#logo {
+    text-align: center;
+}
+
+#all-the-best {
+    text-align: center;
 }
