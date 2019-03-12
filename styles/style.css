@@ -56,18 +56,17 @@ img:hover {
 }
 
 .input {
-    border: 1px solid tgreen;
+    border: 2px solid green;
     height: 25px;
     width: 80%;
 }
 
 .txtarea {
-    border: 1px solid tgreen;
+    border: 2px solid green;
     width: 80%;    
 }
 
 .submit {
-    margin: 15px;
     background: blue;
     color: white;
     border: 0;
@@ -76,16 +75,24 @@ img:hover {
     padding: 10px 30px;
 }
 
+.submit:hover {
+    cursor: pointer;
+}
+
+.row {
+    height: 50px;
+}
+
 .column {
   float: left;
 }
 
 .left {
-  width: 30%;
+  width: 26%;
 }
 
 .right {
-  width: 70%;
+  width: 74%;
 }
 
 #top-level {
@@ -104,4 +111,14 @@ img:hover {
 #select {
     width: 81%;
     height: 30px;
+}
+
+#goto-logo {
+    margin: 15px;
+    background: blue;
+    color: white;
+    border: 0;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 10px 30px;    
 }
