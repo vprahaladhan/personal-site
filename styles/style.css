@@ -47,16 +47,22 @@ img:hover {
 .form-label {
     font-weight: bold;
     width: 200px;
-    margin: 15px;
+    margin-bottom: 15px;
 }
 
 .form-text-input {
-    margin: 15px;
+    margin-bottom: 15px;
 }
 
 .input {
-    border: 1px solid lightgreen;
-    width: 400px;
+    border: 1px solid tgreen;
+    height: 25px;
+    width: 80%;
+}
+
+.txtarea {
+    border: 1px solid tgreen;
+    width: 80%;    
 }
 
 .submit {
@@ -67,6 +73,18 @@ img:hover {
     box-shadow: none;
     border-radius: 5px;
     padding: 10px 30px;
+}
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 70%;
 }
 
 #top-level {
@@ -83,5 +101,6 @@ img:hover {
 }
 
 #select {
-    width: 350px;
+    width: 81%;
+    height: 25px;
 }
