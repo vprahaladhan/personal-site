@@ -42,31 +42,31 @@
         </div>
         <div id="form-wrapper">
             <form id="form">
-                <p class="row">
-                    <span class="form-label">Full Name</span>
-                    <span class="form-text-input"><input class="input" type="text" name="fullName" value="Enter your full name"></span>
-                </p>
-                <p class="row">
-                    <span class="form-label">Secret Pin</span>
-                    <span class="form-text-input"><input class="input" type="text" name="secretPin" value="Enter your secret pin"></span>        
-                </p>
-                <p class="row">
-                    <span class="form-label">Gender</span>
-                    <span class="form-text-input">
-                        <input class="green" type="radio" name="gender" value="male" /> Male
+                <div class="row">
+                    <div class="column left form-label"><span>Full Name</span></div>
+                    <div class="column right form-text-input"><span><input class="input" type="text" name="fullName" value="Enter your full name"></span></div>
+                </div>
+                <div class="row">
+                    <div class="column left form-label"><span>Secret Pin</span></div>
+                    <div class="column right form-text-input"><span><input class="input" type="text" name="secretPin" value="Enter your secret pin"></span></div>        
+                </div>
+                <div class="row">
+                    <div class="column left form-label"><span>Gender</span></div>
+                    <div class="column right form-text-input"><span>
+                        <input class="green" type="radio" name="gender" value="male" /> Male &nbsp;
                         <input class="green" type="radio" name="gender" value="female" /> Female
-                    </span>
-                </p>
-                <p class="row">
-                    <span class="form-label">I am an expert in</span>
-                    <span class="form-text-input">
+                    </span></div>
+                </div>
+                <div class="row">
+                    <div class="column left form-label"><span>I am an expert in</span></div>
+                    <div class="column right form-text-input"><span>
                         <input class="green" type="checkbox" name="html" value="HTML" /> HTML
                         <input class="green" type="checkbox" name="css" value="CSS" /> CSS                
-                    </span>
-                </p>
-                <p class="row">
-                    <span class="form-label">My field of study is</span>
-                    <span class="form-text-input">
+                    </span></div>
+                </div>
+                <div class="row">
+                    <div class="column left form-label"><span>My field of study is</span></div>
+                    <div class="column right form-text-input"><span>
                         <select id="select" class="input">
                             <option value="" disabled selected>Select your branch using this select drop-down</option>
                             <option value="csc">Computer Science</option>
@@ -74,15 +74,15 @@
                             <option value="eee">Electrical &amp; Electronics</option>
                             <option value="civ">Civil</option>
                         </select>
-                    </span>
-                </p>
-                <p class="row">
-                    <span class="form-label label" style="margin-top: 0px">Tell more about yourself</span>
-                    <span class="form-text-input">
-                        <textarea class="input" rows="5" cols="60">This is text area. Enter your description.
+                    </span></div>
+                </div>
+                <div class="row">
+                    <div class="column left form-label label"><span style="margin-top: 0px">Tell more about yourself</span></div>
+                    <div class="column right form-text-input"><span>
+                        <textarea class="txtarea" rows="5" cols="60">This is text area. Enter your description.
                         </textarea>
-                    </span>
-                </p>
+                    </span></div>
+                </div>
                 <input class="submit" type="submit" value="Submit Form">
             </form>
         </div>
