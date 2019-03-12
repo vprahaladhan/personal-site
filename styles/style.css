@@ -57,13 +57,13 @@ img:hover {
 }
 
 .input {
-    border: 1px solid tgreen;
+    border: 2px solid green;
     height: 25px;
     width: 80%;
 }
 
 .txtarea {
-    border: 1px solid tgreen;
+    border: 2px solid green;
     width: 80%;    
 }
 
