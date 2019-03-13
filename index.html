@@ -40,52 +40,57 @@
         <div id="all-the-best">
             <p><b>So, let's get started. All the best!</b></p><br>
         </div>
-        <div id="form-wrapper">
-            <form id="form" action="#logo">
-                <div class="row">
-                    <div class="column left form-label"><span>Full Name</span></div>
-                    <div class="column right form-text-input"><span><input class="input" type="text" name="fullName" value="Enter your full name"></span></div>
+<!--        <form id="form" action="#logo">-->
+            <div id="form-wrapper">
+                <div class="column left form-label">
+                    <span>Full Name</span>
                 </div>
-                <div class="row">
-                    <div class="column left form-label"><span>Secret Pin</span></div>
-                    <div class="column right form-text-input"><span><input class="input" type="text" name="secretPin" value="Enter your secret pin"></span></div>        
+                <div class="column right form-text-input">
+                    <input class="input" type="text" id="full-name" placeholder="Enter your full name">
                 </div>
-                <div class="row">
-                    <div class="column left form-label"><span>Gender</span></div>
-                    <div class="column right form-text-input"><span>
-                        <input class="green" type="radio" name="gender" value="male" /> Male &nbsp;
-                        <input class="green" type="radio" name="gender" value="female" /> Female
-                    </span></div>
+                <div class="column left form-label">
+                    <span>Secret Pin</span>
                 </div>
-                <div class="row">
-                    <div class="column left form-label"><span>I am an expert in</span></div>
-                    <div class="column right form-text-input"><span>
-                        <input class="green" type="checkbox" name="html" value="HTML" /> HTML
-                        <input class="green" type="checkbox" name="css" value="CSS" /> CSS                
-                    </span></div>
+                <div class="column right form-text-input">
+                    <input class="input" type="text" id="secret-pin" placeholder="Enter your secret pin">
+                </div>        
+                <div class="column left form-label">
+                    <span>Gender</span>
                 </div>
-                <div class="row">
-                    <div class="column left form-label"><span>My field of study is</span></div>
-                    <div class="column right form-text-input"><span>
-                        <select id="select" class="input">
-                            <option value="" disabled selected>Select your branch using this select drop-down</option>
-                            <option value="csc">Computer Science</option>
-                            <option value="ele">Electricl</option>
-                            <option value="eee">Electrical &amp; Electronics</option>
-                            <option value="civ">Civil</option>
-                        </select>
-                    </span></div>
+                <div class="column right form-text-input">
+                    <input class="green" type="radio" name="gender" id="male" /> Male &nbsp;
+                    <input class="green" type="radio" name="gender" id="female" /> Female
                 </div>
-                <div class="row">
-                    <div class="column left form-label label"><span style="margin-top: 0px">Tell more about yourself</span></div>
-                    <div class="column right form-text-input"><span>
-                        <textarea class="txtarea" rows="5" cols="60">This is text area. Enter your description.
-                        </textarea>
-                    </span></div>
+                <div class="column left form-label">
+                    <span>I am an expert in</span>
                 </div>
-                <a href="#logo"><button class="submit" type="submit">Submit Form</button></a>
-            </form>
-        </div>
+                <div class="column right form-text-input">
+                    <input class="green" type="checkbox" name="html" value="HTML" /> HTML
+                    <input class="green" type="checkbox" name="css" value="CSS" /> CSS                
+                </div>
+                <div class="column left form-label">
+                    <span>My field of study is</span>
+                </div>
+                <div class="column right form-text-input">
+                    <select id="select" class="input">
+                        <option value="" disabled selected>Select your branch using this select drop-down</option>
+                        <option value="csc">Computer Science</option>
+                        <option value="ele">Electrical</option>
+                        <option value="eee">Electrical &amp; Electronics</option>
+                        <option value="civ">Civil</option>
+                    </select>
+                </div>
+                <div class="column left form-label">
+                    <span style="margin-top: 0px">Tell more about yourself</span>
+                </div>
+                <div class="column right form-text-input">
+                    <textarea class="txtarea" placeholder="This is text area. Enter your description." rows="5" cols="60">
+                    </textarea>
+                </div>
+            </div>
+<!--        <   /form>-->
+        <button id="submit" class="submit">Submit Form</button>
     </div>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
