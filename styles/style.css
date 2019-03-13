@@ -24,7 +24,6 @@ h6:hover{
 
 p {
     font-size: 16px;
-    
 }
 
 li {
@@ -41,14 +40,14 @@ img:hover {
     transform: scale(1.1);
 }
 
-.label{
+/*.label{
     display: inline-block; 
     float: left;
-}
+}*/
 
 .form-label {
     font-weight: bold;
-    width: 200px;
+/*    width: 200px;*/
     margin-bottom: 15px;
 }
 
@@ -68,7 +67,6 @@ img:hover {
 }
 
 .submit {
-    margin: 15px;
     background: blue;
     color: white;
     border: 0;
@@ -77,16 +75,30 @@ img:hover {
     padding: 10px 30px;
 }
 
+.submit:hover {
+    cursor: pointer;
+}
+
+.row {
+    height: 50px;
+}
+
 .column {
-  float: left;
+    float: left;
 }
 
 .left {
-  width: 30%;
+    width: 26%;
 }
 
 .right {
-  width: 70%;
+  width: 74%;
+}
+
+#form-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;    
 }
 
 #top-level {
@@ -106,3 +118,16 @@ img:hover {
     width: 81%;
     height: 30px;
 }
+<<<<<<< HEAD
+=======
+
+#goto-logo {
+    margin: 15px;
+    background: blue;
+    color: white;
+    border: 0;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 10px 30px;    
+}
+>>>>>>> realign-form-elements
