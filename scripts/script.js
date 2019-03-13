@@ -1,7 +1,7 @@
 document.getElementById("submit").onclick = checkFullName; 
 
 function checkFullName() {
-    if (document.getElementById("full-name").value == 0) {
+    if (document.getElementById("full-name").value.trim().length === 0) {
         alert("Full Name is missing!");    
     } else {
         alert(document.getElementById("full-name").value);
