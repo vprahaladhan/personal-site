@@ -12,31 +12,15 @@ document.addEventListener('click', function(e){
             document.getElementById("result").value += e.target.innerText;
         }        
     }
-     console.log(leftOperand + e.target.textContent + rightOperand + " 0");
-    if (e.target.className.includes("operator")) {
-        if (leftOperand == null) {
-            leftOperand = Number(document.getElementById("result").value);
-            operation = e.target.id;
-            document.getElementById("result").value = "";
-            console.log(leftOperand + e.target.textContent + rightOperand + " 1");
-        }
-        else {
-            if (rightOperand != null) {
-                leftOperand = performOperation(leftOperand, operation, rightOperand); 
-                document.getElementById("result").value = "";
-                rightOperand = null;
-                console.log(leftOperand + e.target.textContent + rightOperand + " 2");
-            }
-            else {
-                rightOperand = Number(document.getElementById("result").value);
-                leftOperand = performOperation(leftOperand, operation, rightOperand);
-                rightOperand = null;
-                document.getElementById("result").value = "";
-                console.log(leftOperand + e.target.textContent + rightOperand + " 3");
-            }
-        }
+    if (e.target.className === "operator") {
+        leftOperand = document.getElementById("result").value;
         operation = e.target.id;
     }
+    
+    else {
+        document.getElementById("result").value = leftOperand;
+    }
+
     if (e.target.id === "equals") {
         document.getElementById("result").value = performOperation(leftOperand, operation, Number(document.getElementById("result").value));
         leftOperand = null;
