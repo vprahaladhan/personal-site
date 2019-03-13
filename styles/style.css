@@ -40,14 +40,14 @@ img:hover {
     transform: scale(1.1);
 }
 
-.label{
+/*.label{
     display: inline-block; 
     float: left;
-}
+}*/
 
 .form-label {
     font-weight: bold;
-    width: 200px;
+/*    width: 200px;*/
     margin-bottom: 15px;
 }
 
@@ -84,15 +84,21 @@ img:hover {
 }
 
 .column {
-  float: left;
+    float: left;
 }
 
 .left {
-  width: 26%;
+    width: 26%;
 }
 
 .right {
   width: 74%;
+}
+
+#form-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;    
 }
 
 #top-level {
