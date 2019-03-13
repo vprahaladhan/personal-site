@@ -9,9 +9,12 @@ function checkFullName() {
 }
 
 document.addEventListener('click', function(e){
-    if(e.target.name == "gender"){
+    if (e.target.name === "gender"){
         alert(e.target.id);
-    }
+    } 
+    else if (e.target.id === "calc") {
+        window.open("calculator.html", "_blank");
+    } 
 });
 
 /*
