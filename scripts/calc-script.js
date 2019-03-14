@@ -1,29 +1,40 @@
 var leftOperand = null;
 var rightOperand = null;
 var operation = null;
+var operatorPressed = false;
 
 document.addEventListener('click', function(e){
     var result = document.getElementById("result").value;
-    if (!(e.target.id === "0" && (result.trim() === "0" || result.trim().length === 0))) {
+
+    if (!(e.target.id === '0' && result === '0')) {
         if(e.target.className.includes("green")){
-            if (result.trim() === "0") {
-                document.getElementById("result").value = "";    
+            //document.getElementById("result").value += result;    
+            if (!operatorPressed) {
+                leftOperand = leftOperand == null ?  e.target.id : leftOperand += e.target.id;
+                document.getElementById("result").value = leftOperand;
+                console.log(leftOperand + " : " + document.getElementById("result").value);
+            } else {
+                rightOperand = rightOperand == null ?  e.target.id : rightOperand += e.target.id;
+                document.getElementById("result").value = rightOperand;
+                console.log(rightOperand + " - " + document.getElementById("result").value);
             }
-            document.getElementById("result").value += e.target.innerText;
         }        
     }
-    if (e.target.className === "operator") {
-        leftOperand = document.getElementById("result").value;
+    if (e.target.className.includes("operator")) {
+        operatorPressed = true;
+        console.log("opPressed = " + operatorPressed + " : " + rightOperand);
+        if (leftOperand != null && rightOperand != null) {
+            leftOperand = performOperation(Number(leftOperand), operation, Number(rightOperand));
+            document.getElementById("result").value = leftOperand;            
+            rightOperand = null;
+        }
+        console.log("opPressed = " + operatorPressed + " : " + rightOperand);
         operation = e.target.id;
-    }
-    
-    else {
-        document.getElementById("result").value = leftOperand;
     }
 
     if (e.target.id === "equals") {
-        document.getElementById("result").value = performOperation(leftOperand, operation, Number(document.getElementById("result").value));
-        leftOperand = null;
+        leftOperand = performOperation(Number(leftOperand), operation, Number(rightOperand));
+         document.getElementById("result").value = leftOperand;
         operation = null;
         rightOperand = null;
         console.log(leftOperand + e.target.textContent + rightOperand + " 4");
