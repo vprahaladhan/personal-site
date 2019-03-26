@@ -1,5 +1,3 @@
-document.getElementById("submit").onclick = checkFullName; 
-
 function checkFullName() {
     if (document.getElementById("full-name").value.trim().length === 0) {
         alert("Full Name is missing!");    
@@ -8,13 +6,29 @@ function checkFullName() {
     }
 }
 
+window.addEventListener("load", function(e) {
+   console.log(document.getElementById("modal").style.display); 
+});
+
+document.getElementById("submit").onclick = checkFullName; 
+
 document.addEventListener('click', function(e){
-    if (e.target.name === "gender"){
+    if (e.target.id === "calc") {
+        // window.open("calculator.html", "_blank");
+        document.getElementById("modal").style.display = "block";
+        console.log(document.getElementById("modal").style.display);
+    } 
+    
+//    if (e.target.id === "calc") {
+//        document.getElementById("modal").style.display = "block";
+//        console.log(document.getElementById("modal").style.display);        
+//    }
+});
+
+document.getElementsByName("gender").forEach(function(element) {
+    element.addEventListener('change', function(e) {
         alert(e.target.id);
-    } 
-    else if (e.target.id === "calc") {
-        window.open("calculator.html", "_blank");
-    } 
+    })
 });
 
 /*
