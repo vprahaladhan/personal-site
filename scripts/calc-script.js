@@ -46,6 +46,6 @@ function performOperation(left, operator, right) {
         case 'add':         return left + right;
         case 'subtract':    return left - right;
         case 'multiply':    return left * right;
-        case 'divide':      return left / right;
+        case 'divide':      return right == 0 ? 'CANNOT DIVIDE BY ZERO' : left / right;
     }
 }
