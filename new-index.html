@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My first webpage</title>
+    <link href="./styles/new-style.css" rel="stylesheet">
+</head>
+<body>
+    <form id="form" action="#logo">
+        <div id="form-wrapper">
+            <div class="column left form-label">
+                <span>Full Name</span>
+            </div>
+            <div class="column right form-text-input">
+                <input class="input" type="text" name="fullName" value="Enter your full name">
+            </div>
+            <div class="column left form-label">
+                <span>Secret Pin</span>
+            </div>
+            <div class="column right form-text-input">
+                <input class="input" type="text" name="secretPin" value="Enter your secret pin">
+            </div>        
+            <div class="column left form-label">
+                <span>Gender</span>
+            </div>
+            <div class="column right form-text-input">
+                <input class="green" type="radio" name="gender" value="male" /> Male &nbsp;
+                <input class="green" type="radio" name="gender" value="female" /> Female
+            </div>
+            <div class="column left form-label">
+                <span>I am an expert in</span>
+            </div>
+            <div class="column right form-text-input">
+                <input class="green" type="checkbox" name="html" value="HTML" /> HTML
+                <input class="green" type="checkbox" name="css" value="CSS" /> CSS                
+            </div>
+            <div class="column left form-label">
+                <span>My field of study is</span>
+            </div>
+            <div class="column right form-text-input">
+                <select id="select" class="input">
+                    <option value="" disabled selected>Select your branch using this select drop-down</option>
+                    <option value="csc">Computer Science</option>
+                    <option value="ele">Electrical</option>
+                    <option value="eee">Electrical &amp; Electronics</option>
+                    <option value="civ">Civil</option>
+                </select>
+            </div>
+            <div class="column left form-label">
+                <span style="margin-top: 0px">Tell more about yourself</span>
+            </div>
+            <div class="column right form-text-input">
+                <textarea class="txtarea" rows="5" cols="60">This is text area. Enter your description.
+                </textarea>
+            </div>
+        </div>
+        <a href="#logo"><button class="submit" type="submit">Submit Form</button></a>        
+    </form>
+</body>
+</html>

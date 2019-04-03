@@ -1,0 +1,17 @@
+.column {
+    float: left;
+}
+
+.left {
+    width: 30%;
+}
+
+.right {
+  width: 70%;
+}
+
+#form-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;    
+}
